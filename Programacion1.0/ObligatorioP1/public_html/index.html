@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>Maquetado entrega P1, AP</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="contenedor">
+            <div class="cabezal clearfix">
+                <img id="logo" src="imgs/logo.jpg" alt="logo">
+                <ul id="navPrincipal">
+                    <li id="btnSeccionPrincipal" class="boton">
+                        <a href="#">Principal</a>
+                    </li>
+                    <li id="btnSeccionConsultas" class="boton">
+                        <a href="#">Consultas</a>
+                    </li>
+                    <li id="btnSeccionDatosPersonales" class="boton">
+                        <a href="#">Datos personales</a>
+                    </li>
+                    <li id="btnSeccionAtencion" class="boton">
+                      <a href="#">Atención Médica</a>
+                    </li>
+                    <li id="btnSeccionGestion" class="boton">
+                      <a href="#">Gestión pacientes</a>
+                    </li>
+                </ul>
+                <div id="loginRegistro">
+                    <a id="aCerrarSesion" href="#">Cerrar Sesión</a>
+                </div>
+            </div>
+            <div id="lateral">
+                <h2 id="hLateral1"></h2>
+                <h4 id="hLateral2"></h4>
+            </div>
+            <div id="contenido">
+              <div id="seccionLogin" class="seccion">
+                <h1>Iniciar sesión</h1>
+                <label for="txtUsuario">Usuario:</label>
+                <input type="text" id="txtUsuario" placeholder="Ingrese documento">
+                <br>
+                <label for="txtContrasenia">Contraseña: </label>
+                <input type="password" id="pwdContrasenia" placeholder="Ingrese contraseña">
+                <br>
+                <label for="slcPerfil">Perfil:</label>
+                <select id="slcPerfil">
+                  <option value="-1">Seleccionar...</option>
+                  <option value="1">Paciente</option>
+                  <option value="2">Médico</option>
+                </select>
+                <br>
+                <input type="button" id="btnIniciar" value="Iniciar sesión">
+                <input type="button" id="btnCancelar" value="Cancelar">
+              </div>
+              <div id="seccionPrincipal" class="seccion">
+                <h1>Principal</h1>
+                <p id="pReportePrincipal"></p>
+              </div>
+              <div id="seccionConsultas" class="seccion">
+                <h1>Consultas</h1>
+                <h3>Nueva consulta</h3>
+                <p id="pMedicos"></p>
+                <input type="button" id="btnConsulta" value="Crear consulta">
+                <p id="pAvisosConsulta"></p>
+                <hr>
+                <h3>Mis consultas</h3>
+                <label for="slcConsultas">Visualización:</label>
+                <select id="slcConsultas">
+                  <option value="-1">Todas</option>
+                  <option value="1">Pendientes</option>
+                  <option value="2">Finalizadas</option>
+                </select>
+                <input type="button" id="btnRefrescarConsultas" value="Refrescar datos">
+                <p id="pConsultas"></p>
+              </div>
+              <div id="seccionAtencion" class="seccion">
+                <h1>Atención Médica</h1>
+                <p id="pAtencionPaciente"></p>
+                <table border="1" id="tblPendientesHead">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Nombre</th>
+                      <th>Edad</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="tblPendientesBody">
+                  </tbody>
+                </table>
+                <h3>Datos físicos</h3>
+                <hr>
+                <label for="txtPeso">Altura(cm):</label>
+                <input type="text" id="txtAltura" placeholder="Ingrese altura">
+                <br>
+                <label for="txtPeso">Peso(kg):</label>
+                <input type="text" id="txtPeso" placeholder="Ingrese peso">
+                <br>
+                <input type="button" id="btnAtencionDatos" value="Asignar datos">
+                <p id="pAtencionDatos"></p>
+                <hr>
+                <h3>Datos de pago</h3>
+                <p id="pAtencionPago"></p>
+                <input type="button" id="btnAtencionPago" value="Pagar consulta">
+                <hr>
+                <h3>Finalizar consulta</h3>
+                <textarea id="txtObservacion" placeholder="Agregue una observación"></textarea>
+                <br>
+                <input type="button" id="btnFinalizar" value="Finalizar consulta">
+                <hr>
+                <p id="pAtencionAvisos"></p>
+              </div>
+              <div id="seccionGestion" class="seccion">
+                <h1>Gestión pacientes</h1>
+                <label for="txtDocumentoPaciente">Documento:</label>
+                <input type="text" id="txtDocumentoPaciente" placeholder="Ingrese documento">
+                <input type="button" id="btnBuscarPaciente" value="Buscar">
+                <hr>
+                <p id="pInformacionPaciente"></p>
+                <input type="button" id="btnEstadoPaciente">
+              </div>
+              <div id="seccionDatosPersonales" class="seccion">
+                <h1>Datos personales</h1>
+                <p id="pFoto"></p>
+                <p>Datos obligatorios (*)</p>
+                <label for="txtDocumento">Documento:</label>
+                <input type="text" id="txtDocumento">
+                <br>
+                <label for="txtNombre">Nombre:*</label>
+                <input type="text" id="txtNombre" placeholder="Ingrese nombre">
+                <br>
+                <label for="txtApellido">Apellido:*</label>
+                <input type="text" id="txtApellido" placeholder="Ingrese apellido">
+                <br>
+                <label for="txtEdad">Edad:*</label>
+                <input type="text" id="txtEdad" placeholder="Ingrese edad">
+                <br>
+                <label for="txtMail">Mail:</label>
+                <input type="text" id="txtMail" placeholder="Ingrese mail">
+                <br>
+                <label for="txtContrasenia">Contraseña:*</label>
+                <input type="text" id="txtContrasenia" placeholder="Ingrese contraseña">
+                <br>
+                <label for="txtTelefono">Teléfono:*</label>
+                <input type="text" id="txtTelefono" placeholder="Ingrese teléfono">
+                <br>
+                <label for="txtDireccion">Dirección:</label>
+                <input type="text" id="txtDireccion" placeholder="Ingrese dirección">
+                <br>
+                <label for="fileFoto">Foto:</label>
+                <input type="file" id="fileFoto">
+                <br>
+                <label for="txtEstado">Estado:</label>
+                <input type="text" id="txtEstado">
+                <br>
+                <input type="button" id="btnModificarDatosPaciente" value="Modificar datos">
+                <p id="pDatosPaciente"></p>
+              </div>
+            </div>
+            <div id="pie">
+                Juan Carlos Rodríguez Errecarte (222729)
+            </div>
+        </div>
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/objects.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/code.js"></script>
+    </body>
+</html>

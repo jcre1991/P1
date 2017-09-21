@@ -1,0 +1,381 @@
+/* INICIO MAIN --- SUCCES.HTML */
+
+  main {
+    display: block;
+    background-color: white;
+    text-align: center;
+    padding: 20px 0px;
+    margin-bottom: 50px;
+  }
+
+/* FIN MAIN - SUCCESS.HTML */
+
+  h1,h2,h3,h4,h5,h6{
+    font-family: "SourceSansPro-Bold";
+    color: black;
+  }
+
+  p{
+    font-family: "SourceSansPro-Regular";
+  }
+
+  body {
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+  }
+
+  header {
+    padding: 2px 2px;
+    margin: 0;
+    box-shadow: 0 0 4px;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+
+  header figure {
+    display: inline-block;
+    width: 11%;
+    margin: 10px;
+    text-align: center;
+  }
+
+  #logo {
+    height: 90px;
+    width: auto;
+  }
+
+  nav {
+    float:right;
+    display: inline-block;
+    margin-right: 10px
+  }
+
+  nav ul {
+    padding: 20px 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a{
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px;
+    font-family: "SourceSansPro-Semibold";
+    cursor: pointer;
+  }
+
+  nav ul li a:hover {
+    border-bottom: 3px solid rgb(189, 214 ,0);
+  }
+
+  nav ul li a.active {
+    border-bottom: 3px solid rgb(189, 214 ,0);
+  }
+
+  section {
+    display: inline-block;
+    width: 60%;
+    font-family: "SourceSansPro-Regular";
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  section h4{
+      padding-left: 20px;
+  }
+
+  section p:first-of-type {
+    /* Se aplica a "Todos los campos son obligatorios." */
+    font-size: 0.8rem;
+    color: gray;
+  }
+
+
+  section form {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+
+  section form ul{
+    padding: 0px;
+    list-style: none;
+  }
+
+  section form ul li input[type='text'],input[type='tel'],input[type='email']{
+    width: 90%;
+    height: 20px;
+  }
+
+  section form select {
+    width: 92%;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+
+  section form textarea {
+    width: 90%;
+    height: 6rem;
+    margin-bottom: 20px;
+  }
+
+  section form #terminos{
+    width: 100%;
+    padding: 0px;
+  }
+
+  section form input{
+    margin-bottom: 10px;
+  }
+
+  section form ul li label{
+    width: 100%;
+    display: block;
+  }
+
+  section form #radioButtons label{
+    display: inline;
+  }
+
+  section form #radioButtons input{
+    margin-left: 15px;
+    margin-bottom: 0.8rem;
+  }
+
+  section form #radioButtons input:first-of-type{
+    margin-left: 0px;
+  }
+
+  section form .inlineCondiciones{
+    display: inline;
+  }
+
+  section form #radioButtons label{
+    font-family: "SourceSansPro-Light";
+  }
+
+  .btnSuccess{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    font-size: 17px;
+    color:white;
+    text-decoration: none;
+    font-family: "SourceSansPro-Light";
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+  }
+
+  .btnSuccess:hover{
+    background-color: #4b9e4b;
+  }
+
+  aside {
+    width: 39%;
+    display: inline-block;
+    float: right;
+    box-shadow: 1 1 4px;
+    border-radius: 2px;
+    background-color: white;
+    margin-bottom: 60px;
+    border: 1px solid white;
+  }
+
+  aside iframe {
+    height: 20rem;
+    width: 100%;
+  }
+
+  aside h4, p {
+    padding-left: 10px;
+  }
+
+  footer {
+    background-color: #262324;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  footer #imgContent{
+    margin: 0 auto;
+    padding-top: 6px;
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  footer #imgContent figure{
+      display: inline;
+      width: 100%;
+  }
+
+  footer #imgContent figure img{
+    opacity: 0.4;
+    width: 5vh;
+  }
+
+  footer #imgContent figure img:hover{
+    opacity: 0.9;
+  }
+
+  footer #contactForm{
+    display: inline-block;
+    font-size: 3vh;
+    float: right;
+    width: 50%;
+    border-left: 1px solid #848484;
+    box-sizing: border-box;
+    font-family: "SourceSansPro-Light";
+  }
+
+  footer #contactForm ul{
+    padding: 0px;
+    list-style: none;
+    color:#E6E6E6;
+    width: 40%;
+    margin: 0px;
+    display: inline-block;
+    font-size: 0.6em;
+  }
+
+  footer #contactForm ul:first-child{
+    margin-left: 15%;
+    width: 45%;
+  }
+
+  footer #contactForm ul:last-child{
+    float: right;
+  }
+
+
+/* Extra Small (XS) para smartphones*/
+
+@media (max-width: 767px) {
+
+  header figure{
+    display: block;
+    text-align: center;
+    width: inherit;
+  }
+
+  nav{
+    display: block;
+    float: none;
+    text-align: center;
+    margin-right: 0px;
+  }
+
+  nav ul{
+    padding: 10px 0px;
+  }
+
+  nav ul li a{
+    margin: 0px;
+    font-size: 1.2rem;
+  }
+
+  nav ul li a.active {
+    border-bottom: 3px solid rgb(189, 214 ,0);
+  }
+
+  section{
+    display: block;
+    width: inherit;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+
+  section p:first-of-type{
+    font-size: 0.8rem;
+    color: gray;
+  }
+
+  section form {
+    padding: 0px;
+    background-color: white;
+    width: 100%;
+  }
+
+  section form ul {
+    padding-left: 0;
+  }
+
+  section form ul li {
+    list-style: none;
+    margin: 0.6rem;
+  }
+
+  section form ul li label {
+    display: block;
+  }
+
+  section form ul li textarea {
+    width: 90%;
+    height: 4rem;
+  }
+
+  section form p {
+    font-size: 0.8rem;
+  }
+
+  aside {
+    width: inherit;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 50px;
+    float: none;
+    padding-bottom: 5px;
+  }
+
+  aside h3{
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+
+  footer{
+    padding: 5px 0px 0px 0px;
+  }
+
+  footer div#imgContent{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  footer div#imgContent figure{
+    margin: 0px 0px 0px 10px;
+  }
+
+  footer div#imgContent figure img{
+    width: 1.5rem;
+  }
+
+  footer ul li{
+    display: none;
+  }
+
+  footer #contactForm ul:first-child{
+    width: 100%;
+    margin:0px;
+    text-align: center;
+  }
+
+  footer ul:first-child li:first-child{
+    display: inline;
+    font-size: 0.9rem;
+  }
+
+}

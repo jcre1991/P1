@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/competition.css" type="text/css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elgourmet</title>
+  </head>
+  <body>
+
+    <header>
+      <figure>
+        <a href="index.html">
+          <img src="img/logoText.jpg" alt="Logo MasterChef" id="logo">
+        </a>
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="competition.html" class="active">Concurso</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h3>Inscríbete para el primer concurso de videos de cocina del Uruguay.</h3>
+      <p>Todos los campos son obligatorios.</p>
+      <form id="formulario" action="success.html" method="post">
+        <ul>
+          <li>
+            <label for="txtNombre">Nombre</label>
+            <input type="text" id="txtNombre" class="form" placeholder="Nombre" required>
+          </li>
+          <li>
+            <label for="txtDireccion">Dirección</label>
+            <input type="text" id="txtDireccion" class="form" placeholder="Dirección" required>
+          </li>
+          <li>
+            <label for="txtTelefono">Teléfono</label>
+            <input type="tel" id="txtTelefono" class="form" placeholder="Teléfono" required>
+          </li>
+          <li>
+            <label for="txtEmail">E-mail</label>
+            <input type="email" id="txtEmail" class="form" placeholder="E-mail" required>
+          </li>
+          <li>
+            <label for="rdoGenero">Sexo</label>
+            <li id="radioButtons">
+              <input type="radio" name="genero" value="M" checked>
+              <label for="txtSexo">Masculino</label>
+              <input type="radio" name="genero" value="F">
+              <label for="txtSexo">Femenino</label>
+              <input type="radio" name="genero" value="O">
+              <label for="txtSexo">Otro</label>
+            </li>
+          </li>
+          <li>
+            <label for="txtDificultad">Dificultad</label>
+            <input type="text" id="txtDificultad" class="form" placeholder="Dificultad" required>
+          </li>
+          <li>
+            <label for="slcTipoPlato">Tipo de plato</label>
+            <select id="slcTipoPlato" required>
+              <option value="EN" selected>Entrada</option>
+              <option value="PR">Principal</option>
+              <option value="PO">Postre</option>
+            </select>
+          </li>
+          <li>
+            <label for="txtResumen">Resumen de la receta</label>
+            <textarea id="txtResumen" placeholder="Resumen de la receta" required></textarea>
+          </li>
+          <li>
+            <label for="chkCondiciones" class="inlineCondiciones">Acepta las condiciones</label>
+            <input type="checkbox" id="chkCondiciones" required>
+          </li>
+          <p id="terminos">
+            * "Constituyo el domicilio electrónico que registro en este formulario.
+            Además autorizo al servicio a realizar las comunicaciones y notificaciones
+            personales de los actos indicados en el cap. III del Instructivo de
+            Notificaciones Personales electrónicas al domicilio electrónico constituído.
+            Me obligo a comunicar, en la oficina donde fue constituído este dato, cualquier
+            dato en el domicilio electrónico que denuncio en el presente formulario.
+            Asimismo asumo la responsabilidad respecto al uso exclusivamente personal e
+            intransferible de la cuenta de correo electrónico constituida como domicilio
+            electrónico".
+          </p>
+          <p>
+            <input type="submit" class="btnSuccess" value="Enviar">
+          </p>
+        </ul>
+      </form>
+    </section>
+
+    <aside>
+      <h4>¿Dónde estamos?</h4>
+      <p>Plaza Independencia</p>
+      <p>Montevieo, Uruguay</p>
+      <iframe
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDN85JjhIBzBjTGGnBeU9dOV2DzDulrbg4
+          &q=Montevideo,+Uruguay+,Plaza%Independencia/" allowfullscreen>
+      </iframe>
+    </aside>
+
+    <footer>
+      <div id="imgContent">
+        <figure>
+          <a href="https://www.facebook.com/elgourmet/" target="_blank"><img src="img/facebook.png" alt="Facebook" title="Facebook" alt="Facebook"></a>
+        </figure>
+        <figure>
+          <a href="https://www.instagram.com/elgourmetoficial/" target="_blank"><img src="img/instagram.png" alt="Instagram" title="Instagram" alt="Instagram"></a>
+        </figure>
+        <figure>
+          <a href="https://twitter.com/elgourmet" target="_blank"><img src="img/twitter.png" alt="Twitter" title="Twitter" alt="Twitter"></a>
+        </figure>
+      </div>
+      <div id="contactForm">
+        <ul>
+          <li class="visible">elgourmet® © 2010-2017</li>
+          <li>Contacto</li>
+          <li>Políticas de privacidad</li>
+        </ul>
+        <ul>
+          <li>Anúnciate</li>
+          <li>RSS</li>
+          <li>SiteMap</li>
+        </ul>
+      </div>
+    </footer>
+    
+  </body>
+</html>

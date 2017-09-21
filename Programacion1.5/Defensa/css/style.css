@@ -1,0 +1,44 @@
+#titulo {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #3D7A74;
+}
+
+th, tr, td {
+  border-style: solid;
+  border-color: pink;
+}
+
+section {
+  margin-top: 10px;
+}
+
+figcaption {
+  padding-left: 5px;
+}
+
+table{
+  border-style: solid;
+  border-color: pink;
+  background-color: white;
+}
+
+#tipicos {
+  background-color: #97D2D0;
+}
+
+#platos {
+  border-bottom: solid;
+  text-align: center;
+}
+
+figure {
+  border-style: double;
+  border-color: #3D7A74;
+}
+
+img {
+  width: 100%;
+}
